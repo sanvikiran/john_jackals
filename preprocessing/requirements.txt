@@ -1,0 +1,79 @@
+# Image Preprocessing Pipeline for Eyeglass Prescription Reader
+# Author: Computer Vision Engineer
+# Date: January 21, 2026
+
+# ========== Core Dependencies ==========
+# Computer Vision and Image Processing
+opencv-python>=4.8.0,<5.0.0
+numpy>=1.21.0,<2.0.0
+Pillow>=9.0.0,<11.0.0
+
+# ========== PDF Processing ==========
+# PDF to Image Conversion
+pdf2image>=3.1.0,<4.0.0
+# Alternative/additional PDF library (faster, better memory management)
+PyMuPDF>=1.23.0,<2.0.0
+
+# ========== System Dependencies (may need manual installation) ==========
+# Note: These are system dependencies that may need to be installed separately
+
+# For pdf2image (Poppler utils):
+# Windows: Download from https://github.com/oschwartz10612/poppler-windows/releases
+# Linux: sudo apt-get install poppler-utils  
+# macOS: brew install poppler
+
+# ========== Optional Dependencies ==========
+# Enhanced image processing (optional)
+# scikit-image>=0.19.0,<1.0.0  # Uncomment if advanced image processing needed
+# matplotlib>=3.5.0,<4.0.0     # Uncomment if plotting/visualization needed
+
+# ========== Development Dependencies (optional) ==========
+# Uncomment these if you're developing/testing the module
+
+# Testing
+# pytest>=7.0.0,<8.0.0
+# pytest-cov>=4.0.0,<5.0.0
+
+# Code quality
+# black>=22.0.0,<24.0.0
+# flake8>=5.0.0,<7.0.0
+# mypy>=1.0.0,<2.0.0
+
+# Documentation
+# sphinx>=5.0.0,<8.0.0
+# sphinx-rtd-theme>=1.2.0,<2.0.0
+
+# ========== Performance Dependencies (optional) ==========
+# Uncomment these for better performance on large batches
+
+# Multi-processing and parallel computing
+# joblib>=1.2.0,<2.0.0
+# multiprocessing-logging>=0.3.0,<1.0.0
+
+# ========== Version Notes ==========
+# Python version requirement: Python >= 3.8
+# 
+# Tested with:
+# - Python 3.8, 3.9, 3.10, 3.11
+# - OpenCV 4.8.x, 4.9.x
+# - NumPy 1.21.x - 1.26.x
+# - Pillow 9.x - 10.x
+#
+# Known compatibility issues:
+# - OpenCV 5.x not yet supported
+# - NumPy 2.x may have compatibility issues with OpenCV
+# - PyMuPDF 2.x has breaking API changes
+
+# ========== Installation Instructions ==========
+# 
+# Standard installation:
+# pip install -r requirements.txt
+#
+# For development:
+# pip install -r requirements.txt
+# # Then uncomment and install development dependencies
+#
+# For Docker/containerized environments:
+# Use python:3.9-slim or python:3.10-slim base image
+# Install system dependencies:
+# apt-get update && apt-get install -y poppler-utils libgl1-mesa-glx libglib2.0-0
